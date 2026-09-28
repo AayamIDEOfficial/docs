@@ -6,7 +6,7 @@
 Using Room database
 ===================
 
-This tutorial shows how to setup the Room persistence library so that it can work with AndroidIDE projects.
+This tutorial shows how to setup the Room persistence library so that it can work with AayamIDE projects.
 
 .. _tutorials-using_room_db-begin:
 
@@ -25,7 +25,7 @@ for `saving data in a local database with Room <https://developer.android.com/tr
 The issue
 ---------
 
-When trying to build a project in AndroidIDE which uses the Room persistence library, the annotation processing phase of
+When trying to build a project in AayamIDE which uses the Room persistence library, the annotation processing phase of
 the Java compilation process throws an ``UnsatisfiedLinkError`` which states that the ``sqlite-jdbc`` shared library cannot
 be loaded. This happens because the ``sqlite-jdbc`` library does not recognize the Android Operating System as a valid
 platform. As a result, the build process fails with the following error :
@@ -34,7 +34,7 @@ platform. As a result, the build process fails with the following error :
 
    Task :app:compileDebugJavaWithJavac
    Failed to load native library:sqlite-3.39.3.0-d2db51cf-974c-4209-b766-2102751cbd0f-libsqlitejdbc.so. osinfo: Linux/aarch64
-   java.lang.UnsatisfiedLinkError: /data/data/com.itsaky.androidide/files/usr/tmp/sqlite-3.39.3.0-d2db51cf-974c-4209-b766-2102751cbd0f-libsqlitejdbc.so: dlopen failed: library "libc.so.6" not found
+   java.lang.UnsatisfiedLinkError: /data/data/com.itsaky.AayamIDE/files/usr/tmp/sqlite-3.39.3.0-d2db51cf-974c-4209-b766-2102751cbd0f-libsqlitejdbc.so: dlopen failed: library "libc.so.6" not found
     at java.base/jdk.internal.loader.NativeLibraries.load(Native Method)
     at java.base/jdk.internal.loader.NativeLibraries$NativeLibraryImpl.open(NativeLibraries.java:384)
     at java.base/jdk.internal.loader.NativeLibraries.loadLibrary(NativeLibraries.java:228)
@@ -51,23 +51,23 @@ still uses an older version of ``sqlite-jdbc``. So, all we need to do is to conf
 version of the library.
 
 We're going to build the `android-room-with-a-view <https://github.com/googlecodelabs/android-room-with-a-view>`_ sample
-project in AndroidIDE. To do so, we need to clone the repository first. Go ahead and clone the repository with
-the ``Clone git repository`` button on the main screen or the AndroidIDE terminal.
+project in AayamIDE. To do so, we need to clone the repository first. Go ahead and clone the repository with
+the ``Clone git repository`` button on the main screen or the AayamIDE terminal.
 
 Once you clone the repo, open the project and let the project synchronization to finish. This may take some time
 depending on your device and network.
 
 ..
 
-   If you try to build the same sample project directly in AndroidIDE, you'll get other errors as well, This is because
-   AndroidIDE does not support Android Gradle Plugin older than ``v7.2.0`` and the project uses an older version of the
+   If you try to build the same sample project directly in AayamIDE, you'll get other errors as well, This is because
+   AayamIDE does not support Android Gradle Plugin older than ``v7.2.0`` and the project uses an older version of the
    same.
    To fix this, you'll have to update the sample project to use the newer versions of the Android Gradle Plugin.
 
    The changes you need to make in the project can be found
    in `this specific commit <https://github.com/itsaky/android-room-with-a-view/commit/a33fdd67dfb58487273b1adf67aca85c1f1b0893>`_.
    If you just want to build the sample project, without any modifications, you can
-   clone `this repository <https://github.com/itsaky/android-room-with-a-view>`_ and build it directly in AndroidIDE.
+   clone `this repository <https://github.com/itsaky/android-room-with-a-view>`_ and build it directly in AayamIDE.
 
 
 After the project is initialized, we need to edit the ``app/build.gradle`` file in order to configure Gradle to use a
@@ -125,7 +125,7 @@ processing phase, while the second method modifies the resolution strategy to fo
 the ``sqlite-jdbc`` module for all configurations.
 
 After you do the desired modification in the project, you just need to save the file and sync the project. After that,
-you can build the project as usual. The screenshot below shows the sample application built with AndroidIDE.
+you can build the project as usual. The screenshot below shows the sample application built with AayamIDE.
 
 :raw-html-m2r:`<!-- Room DB : Sample app -->`
 :raw-html-m2r:`<img
