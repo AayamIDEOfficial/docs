@@ -1,6 +1,6 @@
 .. _dev-get_started:
 
-Getting started with building AndroidIDE
+Getting started with building AayamIDE
 ----------------------------------------
 
 .. _dev-get_started_before_start:
@@ -29,13 +29,13 @@ The build configurations have not been tested vastly on Windows and Mac. You mig
 Get the source
 ^^^^^^^^^^^^^^
 
-Make sure you have ``git`` installed and available on your ``PATH``. The ``git`` command is also used by the composite build (\ ``:build-logic:ide``\ ) to get information about the branch and commit information to generate the version name for AndroidIDE.
+Make sure you have ``git`` installed and available on your ``PATH``. The ``git`` command is also used by the composite build (\ ``:build-logic:ide``\ ) to get information about the branch and commit information to generate the version name for AayamIDE.
 
 Once you have installed ``git``\ , clone the repository with :
 
 .. code-block:: bash
 
-   git clone https://github.com/AndroidIDEOfficial/AndroidIDE.git
+   git clone https://github.com/AayamIDEOfficial/AayamIDE.git
 
 Once the repository has been cloned, open the project in Android Studio and start exploring! No extra configuration is required.
 
@@ -46,14 +46,14 @@ Branches
 
 The default (mainline) branch is ``dev``. If you want to propose a change, the pull request must be made to the ``dev`` branch.
 
-Whenever we want to release a new version, the changes are merged into the ``main``. When the workflow runs on the ``main`` branch, it creates and publishes a new AndroidIDE release.
+Whenever we want to release a new version, the changes are merged into the ``main``. When the workflow runs on the ``main`` branch, it creates and publishes a new AayamIDE release.
 
 .. _dev-get_started-signing_key:
 
 Setting up the signing key
 ^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-For security reasons, the signing key for AndroidIDE is not shared publicly.
+For security reasons, the signing key for AayamIDE is not shared publicly.
 If you want to configure a custom signing key, copy the signing key to the root project directory and rename the file to ``signing-key.jks``. Then set up the following environment variables or project properties in ``local.properties`` :
 
 .. list-table::
@@ -69,20 +69,20 @@ If you want to configure a custom signing key, copy the signing key to the root 
      - The keystore password.
 
 
-.. _dev-get_started-building_with_AndroidIDE:
+.. _dev-get_started-building_with_AayamIDE:
 
-Building with AndroidIDE
+Building with AayamIDE
 ^^^^^^^^^^^^^^^^^^^^^^^^
 
-It is possible to build AndroidIDE in AndroidIDE itself. However, this is not recommended due to the size of the project.
+It is possible to build AayamIDE in AayamIDE itself. However, this is not recommended due to the size of the project.
 
-If you do want to build the project in AndroidIDE, just open the project in AndroidIDE and it should "just work". Please note that the code completions and other language services may not work as expected.
+If you do want to build the project in AayamIDE, just open the project in AayamIDE and it should "just work". Please note that the code completions and other language services may not work as expected.
 
-You can build the project with the terminal as well. When doing so, the ``android.aapt2FromMavenOverride`` project property MUST be set in order to use AndroidIDE's ``aapt2`` binary (the build will fail if it isn't set). This can be done like the following :
+You can build the project with the terminal as well. When doing so, the ``android.aapt2FromMavenOverride`` project property MUST be set in order to use AayamIDE's ``aapt2`` binary (the build will fail if it isn't set). This can be done like the following :
 
 .. code-block:: bash
 
-   bash ./gradlew -Pandroid.aapt2FromMavenOverride=$HOME/.androidide/aapt2 <tasks>
+   bash ./gradlew -Pandroid.aapt2FromMavenOverride=$HOME/.aayamide/aapt2 <tasks>
 
 To avoid writing this again and again, you can create a function in ``.bashrc`` file and export the function :
 
@@ -93,7 +93,7 @@ To avoid writing this again and again, you can create a function in ``.bashrc`` 
    function gradlew {
        file="./gradlew"
        if test -f "$file" ; then
-           bash $file -Pandroid.aapt2FromMavenOverride=$HOME/.androidide/aapt2 $@
+           bash $file -Pandroid.aapt2FromMavenOverride=$HOME/.aayamide/aapt2 $@
        else
            echo "Invoke this command from a project's root directory."
        fi
