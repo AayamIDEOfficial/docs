@@ -3,10 +3,10 @@
 Editor Color Schemes
 ====================
 
-AndroidIDE `\ ``v2.1.4-beta`` <https://github.com/AndroidIDEOfficial/AndroidIDE/releases/tag/v2.1.4-beta>`_ added limited
-support for custom color schemes in the editor. You can create your own color schemes and use it for AndroidIDE's
-editor. The color schemes are defined using the JSON syntax and are stored in the ``$HOME/.androidide/ui/editor/schemes``
-directory. The default color scheme used is ``AndroidIDE Default``.
+AayamIDE `\ ``v2.1.4-beta`` <https://github.com/AayamIDEOfficial/AayamIDE/releases/tag/v2.1.4-beta>`_ added limited
+support for custom color schemes in the editor. You can create your own color schemes and use it for AayamIDE's
+editor. The color schemes are defined using the JSON syntax and are stored in the ``$HOME/.aayamide/ui/editor/schemes``
+directory. The default color scheme used is ``AayamIDE Default``.
 
 Custom color schemes are currently used only for languages that
 use `\ ``tree-sitter`` <https://github.com/tree-sitter/tree-sitter>`_ for syntax highlighting.
@@ -20,7 +20,7 @@ The color schemes stored in the schemes directory must have the following file s
 
 .. code-block::
 
-   $HOME/.androidide/ui/editor/schemes
+   $HOME/.aayamide/ui/editor/schemes
    └── <scheme id> (directory)
        └── scheme.prop
 
@@ -29,7 +29,7 @@ For example, the ``default`` color scheme has the following directory structure 
 
 .. code-block::
 
-   $HOME/.androidide/ui/editor/schemes
+   $HOME/.aayamide/ui/editor/schemes
    └── default  <-- This is the scheme id
        ├── ...
        └── scheme.prop
@@ -44,7 +44,7 @@ scheme with its id suffixed with ``-dark``. For example :
 
 .. code-block::
 
-   $HOME/.androidide/ui/editor/schemes
+   $HOME/.aayamide/ui/editor/schemes
    ├── default  <-- 'default' color scheme
    |   ├── ...
    |   └── scheme.prop
@@ -190,7 +190,7 @@ In the second case, the ``editor.json`` file must have the following syntax:
    }
 
 The keys for the editor colors can be found
-`here <https://github.com/AndroidIDEOfficial/AndroidIDE/blob/83b8ffb531e96bf306734332ddea2e38441d9d54/editor/src/main/java/com/itsaky/androidide/editor/schemes/internal/parser/SchemeParser.kt#L33>`_.
+`here <https://github.com/AayamIDEOfficial/AayamIDE/blob/83b8ffb531e96bf306734332ddea2e38441d9d54/editor/src/main/java/com/itsaky/androidide/editor/schemes/internal/parser/SchemeParser.kt#L33>`_.
 
 .. _user-editor-color_schemes-lang_arr:
 
@@ -351,8 +351,8 @@ more practical example.
    <details>
    <summary>See example</summary>
 
-   The tree-sitter queries for Java that are used in AndroidIDE can be
-   found [here](https://github.com/AndroidIDEOfficial/AndroidIDE/tree/dev/editor/src/main/assets/editor/treesitter/java).
+   The tree-sitter queries for Java that are used in AayamIDE can be
+   found [here](https://github.com/AayamIDEOfficial/AayamIDE/tree/dev/editor/src/main/assets/editor/treesitter/java).
 
    ```json
    {
