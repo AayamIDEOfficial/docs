@@ -3,14 +3,14 @@
 UI Designer
 ===========
 
-The UI Designer in AndroidIDE facilitates the visual design of XML layouts through intuitive drag-and-drop functionality. This document provides an overview of the UI Designer workspace and its key elements.
+The UI Designer in AayamIDE facilitates the visual design of XML layouts through intuitive drag-and-drop functionality. This document provides an overview of the UI Designer workspace and its key elements.
 
 .. _user-ui_designer-workspace:
 
 The Workspace
 -------------
 
-Your XML code is parsed and inflated by AndroidIDE's `LayoutInflater API`, then displayed in the workspace. Drag and drop inflated views and widgets to rearrange, modify attributes, add new views, or delete existing ones.
+Your XML code is parsed and inflated by AayamIDE's `LayoutInflater API`, then displayed in the workspace. Drag and drop inflated views and widgets to rearrange, modify attributes, add new views, or delete existing ones.
 
 .. _user-ui_designer-workspace-add_new_views:
 

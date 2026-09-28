@@ -3,7 +3,7 @@
 Editor UI
 =========
 
-When you create a new project or open an existing one, AndroidIDE
+When you create a new project or open an existing one, AayamIDE
 welcomes you to the Editor UI. This guide walks you through the key
 components of the Editor, enhancing your understanding and efficiency
 while coding.
@@ -50,7 +50,7 @@ on each component and advanced editor functionalities.
 Options Menu
 ------------
 
-In the top-right corner of the AndroidIDE interface, you'll find the
+In the top-right corner of the AayamIDE interface, you'll find the
 options menu, represented by three dots (`⋮`). This menu provides
 essential functionalities to enhance your development experience.
 
@@ -60,7 +60,7 @@ essential functionalities to enhance your development experience.
    
   - Executes `assemble` task on the selected build variant
     and installs the APK for that variant, if permission is granted.
-    If the `REQUEST_INSTALL_PACKAGES` is not granted to AndroidIDE, you
+    If the `REQUEST_INSTALL_PACKAGES` is not granted to AayamIDE, you
     will be asked to grant the permission in order to continue.
 
 2. **Run Tasks:**
@@ -101,7 +101,7 @@ essential functionalities to enhance your development experience.
 The file tree
 -------------
 
-The file tree in the left navigation drawer of AndroidIDE is a
+The file tree in the left navigation drawer of AayamIDE is a
 hierarchical representation of your project files. Presented in a tree
 format, it allows for easy navigation and management of project
 resources.
@@ -130,7 +130,7 @@ resources.
 Bottom sheet
 ------------
 
-The bottom sheet in AndroidIDE serves as a comprehensive tool for
+The bottom sheet in AayamIDE serves as a comprehensive tool for
 accessing crucial information related to Gradle builds, app logs, IDE
 logs, and more. Easily expandable by sliding or a simple click, it
 provides a detailed overview of various build processes.
@@ -142,8 +142,8 @@ provides a detailed overview of various build processes.
    - Highlights project-related build issues for quick identification.
 
 2. **App Logs:**
-   - For `debug` builds, AndroidIDE integrates the `LogSender` API.
-   - Continuously sends logs from your application to AndroidIDE.
+   - For `debug` builds, AayamIDE integrates the `LogSender` API.
+   - Continuously sends logs from your application to AayamIDE.
    - This tab showcases received logs for analysis.
 
 3. **IDE Logs:**
@@ -182,14 +182,14 @@ provides a detailed overview of various build processes.
 Code editor
 -----------
 
-AndroidIDE utilizes `sora-editor <https://github.com/Rosemoe/sora-editor>`_ as its robust code editor.
+AayamIDE utilizes `sora-editor <https://github.com/Rosemoe/sora-editor>`_ as its robust code editor.
 Powered by tree sitter for fast and incremental parsing, the editor enhances your coding experience with a multitude of features.
 
 **1. Syntax Highlighting:**
   - Lexers generated using tree sitter and ANTLR4 for select languages.
   - Facilitates precise syntax highlighting for effective code comprehension.
   - Utilizes our Java bindings for tree sitter available at
-    `android-tree-sitter <https://github.com/AndroidIDEOffcial/android-tree-sitter>`_.
+    `android-tree-sitter <https://github.com/AayamIDEOffcial/android-tree-sitter>`_.
 
 **2. Default Key Bindings:**
   - Supports default key bindings for physical keyboards (and some supported virtual keyboards),

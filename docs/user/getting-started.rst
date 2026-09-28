@@ -3,7 +3,7 @@
 Getting Started
 ===============
 
-This guide helps you get started with AndroidIDE and build your first Android application.
+This guide helps you get started with AayamIDE and build your first Android application.
 Ensure you have installed the build tools by following :doc:`the installation guide </user/installation>` before proceeding.
 
 .. _user-getting_started-creating_project:
@@ -12,7 +12,7 @@ Creating a New Project
 ----------------------
 
 
-#. Open AndroidIDE.
+#. Open AayamIDE.
 #. Click on the ``Create project`` button.
 #. Choose a project template to set up basic configurations.
 #. Enter application details, including name, package name, directory, and SDK versions.
@@ -30,9 +30,9 @@ Working with an Existing Project
 #. Update build scripts if opening projects from older IDEs.
 
 .. note::
-    When building projects with AndroidIDE, your project must use Android Gradle Plugin ``v7.2.0`` or newer.
+    When building projects with AayamIDE, your project must use Android Gradle Plugin ``v7.2.0`` or newer.
     If you project uses an older version of the Android Gradle Plugin, you may need to update your project
-    in order to build it in AndroidIDE. However, building the project in the terminal does not require any
+    in order to build it in AayamIDE. However, building the project in the terminal does not require any
     changes.
 
 .. _user-getting_started-syncing_and_building:
