@@ -3,7 +3,7 @@
 Installation
 ============
 
-This guide walks you through the installation process for AndroidIDE,
+This guide walks you through the installation process for AayamIDE,
 including setting up the terminal and installing Android build tools.
 
 .. _user-installation-minreq:
@@ -19,7 +19,7 @@ Before proceeding, ensure that your Android device meets these minimum requireme
 
   * ``arm64-v8a``
   * ``armeabi-v7a``
-  * ``x86_64`` (requires AndroidIDE v2.7.0-beta or newer)
+  * ``x86_64`` (requires AayamIDE v2.7.0-beta or newer)
 
 * 
   **RAM:**
@@ -39,11 +39,11 @@ Before proceeding, ensure that your Android device meets these minimum requireme
 
   * WiFi connection is recommended for the initial setup.
 
-**Download AndroidIDE:**
+**Download AayamIDE:**
 
 
-* `Download from Github Releases <https://github.com/AndroidIDEOfficial/AndroidIDE/releases>`_
-* `Debug Version (for testers) <https://github.com/AndroidIDEOfficial/AndroidIDE/actions>`_
+* `Download from Github Releases <https://github.com/AayamIDEOfficial/AayamIDE/releases>`_
+* `Debug Version (for testers) <https://github.com/AayamIDEOfficial/AayamIDE/actions>`_
 
   * To download the debug version, choose ``Build and test`` workflow, then download the artifact.
   * Make sure to be logged in to GitHub in your browser when downloading artifacts.
@@ -57,7 +57,7 @@ Before proceeding, ensure that your Android device meets these minimum requireme
 **Setup the Terminal:**
 
 
-#. Open AndroidIDE terminal.
+#. Open AayamIDE terminal.
 #. It will install bootstrap packages if required.
 #. Run ``pkg upgrade`` to update packages to the latest version.
 
