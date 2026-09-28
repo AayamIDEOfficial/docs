@@ -1,6 +1,6 @@
-.. _androidide-introduction:
+.. _AaayamIDE-introduction:
 
-AndroidIDE Documentation
+AaayamIDE Documentation
 ========================
 
 .. toctree:: 
