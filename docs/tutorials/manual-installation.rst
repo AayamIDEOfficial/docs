@@ -1,30 +1,30 @@
 .. tutorials-manual_installation:
 
-Manually installing AndroidIDE
+Manually installing AayamIDE
 ==============================
 
 This tutorial walks through the process of **manually** installing the build tools like
-JDK, Android SDK, etc. in AndroidIDE.
+JDK, Android SDK, etc. in AayamIDE.
 
 .. note::
 
-   This guide assumes a basic understanding of AndroidIDE and its terminal usage. If you encounter any issues during
-   the installation process, refer to the AndroidIDE documentation or seek assistance from the Android development
+   This guide assumes a basic understanding of AayamIDE and its terminal usage. If you encounter any issues during
+   the installation process, refer to the AayamIDE documentation or seek assistance from the Android development
    community.
 
 Introduction
 ------------
 
-AndroidIDE is a powerful, integrated development environment used for Android app development. While the installation
+AayamIDE is a powerful, integrated development environment used for Android app development. While the installation
 process typically involves using the ``idesetup`` script, there may be instances where users encounter network issues or
 other reasons that require manual installation of the build tools. In this blog post, I will walk you through the
-step-by-step process of manually installing the build tools in AndroidIDE.
+step-by-step process of manually installing the build tools in AayamIDE.
 
 Step 1: Determine CPU Architecture
 ----------------------------------
 
 Before proceeding with the manual installation, you need to determine the CPU architecture of your Android device.
-AndroidIDE supports two CPU architectures:
+AayamIDE supports two CPU architectures:
 
 
 * ``arm64-v8a``
@@ -36,11 +36,11 @@ Knowing your device's CPU architecture is crucial for downloading the appropriat
 Step 2: Downloading the Build Tools
 -----------------------------------
 
-The build tools can be downloaded from the AndroidIDE Tools GitHub repository. Follow these steps to download the
+The build tools can be downloaded from the AayamIDE Tools GitHub repository. Follow these steps to download the
 necessary files:
 
 
-#. Visit the `androidide-tools repository <https://github.com/AndroidIDEOfficial/androidide-tools>`_ on GitHub.
+#. Visit the `AayamIDE-tools repository <https://github.com/AayamIDEOfficial/AayamIDE-tools>`_ on GitHub.
 
 #. Navigate to the releases page.
 
@@ -49,7 +49,7 @@ necessary files:
 
    * 
      Android SDK base files and the command line tools
-     from `this specific release <https://github.com/AndroidIDEOfficial/androidide-tools/releases/tag/sdk>`_.
+     from `this specific release <https://github.com/AayamIDEOfficial/AayamIDE-tools/releases/tag/sdk>`_.
 
 
      * ``android-sdk.tar.xz``
@@ -81,7 +81,7 @@ Step 3: Installing the Build Tools
 Once you have downloaded the necessary files, follow these steps to install the build tools:
 
 
-#. Open AndroidIDE and access the terminal.
+#. Open AayamIDE and access the terminal.
 
 #. If the current working directory is not ``HOME`` or if you're unsure about the current working directory, execute the
    following command to navigate to the ``HOME`` directory:
@@ -119,7 +119,7 @@ Step 4: Installing OpenJDK 17 Package
 -------------------------------------
 
 To complete the installation, you need to install the ``openjdk-17`` package. Execute the following command in the
-AndroidIDE terminal:
+AayamIDE terminal:
 
 .. code-block:: bash
 
@@ -128,9 +128,9 @@ AndroidIDE terminal:
 Conclusion
 ----------
 
-In situations where network issues or other factors prevent the automatic installation of build tools in AndroidIDE,
+In situations where network issues or other factors prevent the automatic installation of build tools in AayamIDE,
 manual installation becomes necessary. By following the steps outlined in this tutorial, you can successfully install
-the build tools, platform tools, and command line tools, ensuring a seamless development experience in AndroidIDE.
+the build tools, platform tools, and command line tools, ensuring a seamless development experience in AayamIDE.
 Remember to choose the appropriate files based on your device's CPU architecture and stay updated with the latest tool
 versions for optimal performance and compatibility. Happy coding!
 
