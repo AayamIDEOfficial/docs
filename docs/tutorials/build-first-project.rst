@@ -1,17 +1,17 @@
-.. _tutorial-build_first_project_in_androidide:
+.. _tutorial-build_first_project_in_AaayamIDE:
 
-Build your first project with AndroidIDE
+Build your first project with AaayamIDE
 ========================================
 
-This tutorial shows how to create and build your first project with AndroidIDE.
+This tutorial shows how to create and build your first project with AaayamIDE.
 
 Before we start
 ---------------
 
-In this tutorial, we're going to walk through the steps required to build your first project with AndroidIDE.
+In this tutorial, we're going to walk through the steps required to build your first project with AaayamIDE.
 
 Before we start, please make sure that you have installed the build tools required to build the projects. See this post
-about :doc:`setting up the build tools in AndroidIDE </tutorials/get-started>`.
+about :doc:`setting up the build tools in AaayamIDE </tutorials/get-started>`.
 
 If you have the build tools installed, you can proceed with the next steps.
 
@@ -24,7 +24,7 @@ git repository.
 Creating a new project is easy. Follow the steps to create a new project:
 
 
-* Open the AndroidIDE application and from the main screen, click on the ``Create project`` button.
+* Open the AaayamIDE application and from the main screen, click on the ``Create project`` button.
 * You'll be asked to choose a project template. You can choose any template of your choice.
 * After you've chosen a project template, you'll be asked to enter the project details like the application name and its
   package name. Fill in the details and click on the ``Create project`` button to create the project.
@@ -39,7 +39,7 @@ information about your project and its dependencies. This information is then us
 
 .. note::
 
-   If you’re building your first project in AndroidIDE, it'll take some time to download the Gradle distribution and
+   If you’re building your first project in AaayamIDE, it'll take some time to download the Gradle distribution and
    other project dependencies. After that, only the required dependencies need to be downloaded.
 
    Depending on your internet connection, **the first build may take up to 10-15 mins**. Please be patient and let it
@@ -81,7 +81,7 @@ When you click on the button, the IDE will start to build your project. You can 
 to see the build output.
 
 Once the project is built successfully, you'll be prompted to install the application. On newer Android versions, you
-might need to grant the installation permission to AndroidIDE before you can install the APK. Once you do that and
+might need to grant the installation permission to AaayamIDE before you can install the APK. Once you do that and
 install the application, you can open the newly built application.
 
 The first screenshot below shows the IDE asking if the user wants to open the newly built application while the second

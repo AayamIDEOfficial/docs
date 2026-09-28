@@ -2,10 +2,10 @@
 
 # -- Project information
 
-project = "AndroidIDE"
-copyright = "2023, The AndroidIDE Project"
-author = "AndroidIDE"
-github_user = "AndroidIDEOfficial"
+project = "AayamIDE"
+copyright = "2026, The AayamIDE Project"
+author = "AayamIDE"
+github_user = "AayamIDEOfficial"
 github_repo = "docs"
 github_version = "main"
 
