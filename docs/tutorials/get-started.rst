@@ -1,35 +1,35 @@
-.. _tutorial-getting_started_with_androidide:
+.. _tutorial-getting_started_with_AayamIDE:
 
-Getting started with AndroidIDE
+Getting started with AayamIDE
 ===============================
 
 This tutorial walks through the process of installing the build tools like
-JDK, Android SDK, etc. in AndroidIDE.
+JDK, Android SDK, etc. in AayamIDE.
 
-.. _tutorial-getting_started_with_androidide-intro:
+.. _tutorial-getting_started_with_AayamIDE-intro:
 
 Introduction
 ------------
 
-AndroidIDE is a feature-rich Integrated Development Environment (IDE) for developing  Gradle-based Android
+AayamIDE is a feature-rich Integrated Development Environment (IDE) for developing  Gradle-based Android
 applications on Android devices. The IDE offers an impressive range of features, including Gradle support, a
 Termux-based terminal with necessary packages, advanced Java and XML code completions.
 
-AndroidIDE is available for download from the `AndroidIDE website <https://androidide.com>`_ or
-from `GitHub releases <https://github.com/AndroidIDEOfficial/AndroidIDE/releases>`_.
+AayamIDE is available for download from the `AayamIDE website <https://AayamIDE.com>`_ or
+from `GitHub releases <https://github.com/AayamIDEOfficial/AayamIDE/releases>`_.
 
-In this tutorial, we're going to walk through the steps required to setup the AndroidIDE build tools on your device.
+In this tutorial, we're going to walk through the steps required to setup the AayamIDE build tools on your device.
 
-.. _tutorial-getting_started_with_androidide-minreq:
+.. _tutorial-getting_started_with_AayamIDE-minreq:
 
 Minimum requirements
 --------------------
 
-Before installing and using AndroidIDE, it is essential to ensure that your device meets the minimum requirements to run
+Before installing and using AayamIDE, it is essential to ensure that your device meets the minimum requirements to run
 the application.
 
-* Supported CPU - You must ensure that your device has a CPU architecture that is supported by AndroidIDE. The following
-  CPU architecture is supported by AndroidIDE:
+* Supported CPU - You must ensure that your device has a CPU architecture that is supported by AayamIDE. The following
+  CPU architecture is supported by AayamIDE:
 
   - ``arm64-v8a`` - 64-bit ARM.
   - ``armeabi-v7a`` - 32-bit ARM.
@@ -41,31 +41,31 @@ the application.
 
 * Enough storage space - A minimum of 4GB free storage space is required. You'll need enough space for various Gradle
   distributions and dependencies, according to your project configuration. After the basic setup, around 1GB of space is
-  used by AndroidIDE (without any dependencies or distributions installed).
+  used by AayamIDE (without any dependencies or distributions installed).
 
 An internet connection is required for the initial setup. A **WiFi connection** is recommended.
 
-.. _tutorial-getting_started_with_androidide-install:
+.. _tutorial-getting_started_with_AayamIDE-install:
 
-Install AndroidIDE
+Install AayamIDE
 ------------------
 
-The first step is to install the latest AndroidIDE APK. You could download the APK from the following sources :
+The first step is to install the latest AayamIDE APK. You could download the APK from the following sources :
 
-* `The AndroidIDE Website <https://androidide.com>`_
-* `GitHub Releases <https://github.com/AndroidIDEOfficial/AndroidIDE/releases>`_
-* `GitHub Actions <https://github.com/AndroidIDEOfficial/AndroidIDE/actions>`_ - only if you're willing to try out the
+* `The AayamIDE Website <https://AayamIDE.com>`_
+* `GitHub Releases <https://github.com/AayamIDEOfficial/AayamIDE/releases>`_
+* `GitHub Actions <https://github.com/AayamIDEOfficial/AayamIDE/actions>`_ - only if you're willing to try out the
   latest, probably **unstable** test builds.
-* `F-Droid <https://f-droid.org/packages/com.itsaky.androidide/>`_
+* `F-Droid <https://f-droid.org/packages/com.itsaky.AayamIDE/>`_
 
 .. warning:: 
-  F-Droid and GitHub builds are incompatible with each other! If you have already installed AndroidIDE from GitHub and if
-  you try to install AndroidIDE from F-Droid, it won't be installed. Same goes for installing GitHub builds over F-Droid builds.
+  F-Droid and GitHub builds are incompatible with each other! If you have already installed AayamIDE from GitHub and if
+  you try to install AayamIDE from F-Droid, it won't be installed. Same goes for installing GitHub builds over F-Droid builds.
 
 Please make sure that you download the files only from the **trusted** sources above. Installing it from unknown sources
 may pose a security risk to your device.
 
-.. _tutorial-getting_started_with_androidide-basic_setup:
+.. _tutorial-getting_started_with_AayamIDE-basic_setup:
 
 Basic setup
 -----------
@@ -74,14 +74,14 @@ Before getting started with building projects, you need to install the basic bui
 to function properly.
 
 When you open the application for the first time, you'll be presented with the onboarding screen which will guide you to installing
-AndroidIDE and ask you for the following permissions :
+AayamIDE and ask you for the following permissions :
 
 * **Storage** - Required to work with files on the File System.
-* **Install packages** - Required for installing apps built with AndroidIDE.
+* **Install packages** - Required for installing apps built with AayamIDE.
 * **Post Notifications** - For Android 13 and above, you need to grant the ``POST_NOTIFICATION`` permission. This will be
   used to show notifications on your device.
 
-There are three methods to install AndroidIDE:
+There are three methods to install AayamIDE:
 
 * Automated installation
   
@@ -94,10 +94,10 @@ There are three methods to install AndroidIDE:
 * Manual installation
   
   - ``idesetup`` script - provides you various options to install the tools.
-    See :ref:`installation with idesetup <tutorial-getting_started_with_androidide-install_with_idesetup>`.
+    See :ref:`installation with idesetup <tutorial-getting_started_with_AayamIDE-install_with_idesetup>`.
   
   - Fully manual - manually install the tools by yourself. Choose this if you have already downloaded the tools or if you want to install
-    custom tools in AndroidIDE. This can also be beneficial if you frequently re-install AndroidIDE.
+    custom tools in AayamIDE. This can also be beneficial if you frequently re-install AayamIDE.
     :doc:`See the manual installation guide </tutorials/manual-installation>`.
 
 After you have granted the permissions, you'll be navigated to `Setup tools` screen which you can use to configure the installation.
@@ -123,14 +123,14 @@ The below images show the SDK installation GUI and the terminal activity respect
      </div>
    </div>
 
-.. _tutorial-getting_started_with_androidide-install_with_idesetup:
+.. _tutorial-getting_started_with_AayamIDE-install_with_idesetup:
 
 Install the build tools with ``idesetup``
 -----------------------------------------
 
-The AndroidIDE terminal includes the ``idesetup`` command which downloads and installs the required build tools for your
+The AayamIDE terminal includes the ``idesetup`` command which downloads and installs the required build tools for your
 device. It is a simple shell script which downloads the required files from
-the `androidide-tools <https://github.com/AndroidIDEOfficial/androidide-tools>`_ GitHub repo and extracts them at their
+the `AayamIDE-tools <https://github.com/AayamIDEOfficial/AayamIDE-tools>`_ GitHub repo and extracts them at their
 proper location. It also installs the ``openjdk-17`` package.
 
 There are various options available in the script which you can use to customize the installation. However, **the
@@ -139,8 +139,8 @@ which should print an output similar to the following :
 
 .. code-block::
 
-   AndroidIDE build tools installer
-   This script helps you easily install build tools in AndroidIDE.
+   AayamIDE build tools installer
+   This script helps you easily install build tools in AayamIDE.
 
    Usage:
    idesetup -s 33.0.1 -c -j 17
@@ -151,7 +151,7 @@ which should print an output similar to the following :
    -s   Android SDK version to download.
    -c   Download Android SDK with command line tools.
    -j   Choose whether to install JDK 17 or JDK 21.
-   -m   Manifest file URL. Defaults to 'manifest.json' in 'androidide-tools' GitHub repository.
+   -m   Manifest file URL. Defaults to 'manifest.json' in 'AayamIDE-tools' GitHub repository.
 
    For testing purposes:
    -a   CPU architecture. Extracted using 'uname -m' by default.
@@ -165,7 +165,7 @@ with the following command :
 
 .. code-block::
 
-   wget https://raw.githubusercontent.com/AndroidIDEOfficial/androidide-tools/main/scripts/idesetup -O $SYSROOT/bin/idesetup && chmod +x $SYSROOT/bin/idesetup
+   wget https://raw.githubusercontent.com/AayamIDEOfficial/AayamIDE-tools/main/scripts/idesetup -O $SYSROOT/bin/idesetup && chmod +x $SYSROOT/bin/idesetup
 
 Now, **execute the following command** to start the build tools installation.
 
@@ -179,7 +179,7 @@ Enter** to confirm the configuration. The script will then start the installatio
 .. code-block::
 
    ------------------------------------------
-   Installation directory    : /data/data/com.itsaky.androidide/files/home
+   Installation directory    : /data/data/com.itsaky.AayamIDE/files/home
    SDK version               : 33.0.3
    JDK version               : 17
    With command line tools   : true
@@ -220,7 +220,7 @@ command. Your output must be similar to :
    OpenJDK Runtime Environment (build 17-internal+0-adhoc.root.src)
    OpenJDK 64-Bit Server VM (build 17-internal+0-adhoc.root.src, mixed mode)
 
-It is recommended to restart AndroidIDE after the installation.
+It is recommended to restart AayamIDE after the installation.
 
-Congratulations! You've successfully installed the build tools in AndroidIDE. Now it's time
+Congratulations! You've successfully installed the build tools in AayamIDE. Now it's time
 to ::doc:`build your first project </tutorials/build-first-project>`.
