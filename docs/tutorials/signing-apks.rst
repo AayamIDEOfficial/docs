@@ -3,7 +3,7 @@
 Signing APKs
 ============
 
-This tutorial shows how to create a signed release APK of your project with AndroidIDE.
+This tutorial shows how to create a signed release APK of your project with AayamIDE.
 
 Introduction
 ------------
@@ -11,7 +11,7 @@ Introduction
 This tutorial covers the following topics :
 
 
-* Create a keystore file with AndroidIDE Terminal.
+* Create a keystore file with AayamIDE Terminal.
 * Configure Gradle to use the signing key.
 * Verify APK signature.
 
@@ -20,13 +20,13 @@ Creating the keystore
 
 For creating the keystore file, we'll use ``keytool`` that is provided by OpenJDK. You can execute the ``keytool -h``
 command to check if the tool is available or not. If you do not see the help message, you might need
-to `perform the basic setup </blogs/getting-started/2023/03/15/getting-started-with-androidide>`_ before you can proceed
+to `perform the basic setup </blogs/getting-started/2023/03/15/getting-started-with-AayamIDE>`_ before you can proceed
 with next steps.
 
 Open the terminal and follow the instructions to create the keystore.
 
 First of all, you need to ``cd`` into the directory where you want to store the keystore file. For this tutorial, we'll be
-storing the keystore in the ``AndroidIDEProjects`` directory in the internal storage. Execute the following command
+storing the keystore in the ``AayamIDEProjects`` directory in the internal storage. Execute the following command
 to ``cd`` into the projects' directory :
 
 .. code-block:: bash
