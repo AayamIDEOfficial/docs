@@ -1,6 +1,6 @@
-.. _AaayamIDE-introduction:
+.. _AayamIDE-introduction:
 
-AaayamIDE Documentation
+AayamIDE Documentation
 ========================
 
 .. toctree:: 
