@@ -3,7 +3,7 @@
 Versioning
 ==========
 
-The AndroidIDE version numbers are incremented automatically based on the commit messages and the previous releases.
+The AayamIDE version numbers are incremented automatically based on the commit messages and the previous releases.
 This is achieved using the `Nyx <https://github.com/mooltiverse/nyx>`_ project. Nyx is a powerful, flexible and
 extremely configurable semantic release tool.
 
@@ -16,7 +16,7 @@ extremely configurable semantic release tool.
 Basics
 ------
 
-AndroidIDE uses `semantic versioning <https://semver.org/>`_. The version numbers are automatically incremented by Nyx
+AayamIDE uses `semantic versioning <https://semver.org/>`_. The version numbers are automatically incremented by Nyx
 based on the type of `conventional commits <https://www.conventionalcommits.org/en/v1.0.0/>`_ and previous release. Specifically :
 
 
@@ -58,7 +58,7 @@ For example : ``v2.5.3-beta.internal.1+branch.dev.commit.41779f3.timespamp.[...]
 Configuration
 -------------
 
-Nyx is configured using the ``.nyx.yml`` file located in AndroidIDE project's root directory.
+Nyx is configured using the ``.nyx.yml`` file located in AayamIDE project's root directory.
 A `detailed documentation <https://mooltiverse.github.io/nyx/guide/user/>`_ about using Nyx is available on the project's site.
 
 The Nyx Gradle plugin is applied to the ``settings.gradle.kts`` file and the configuration file is set by configuring the ``NyxExtension``.
